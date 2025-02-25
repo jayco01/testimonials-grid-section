@@ -92,24 +92,28 @@ textarea:not([rows]) {
 
 body {
     background-color: var(--clr-grey200);
+    align-content: center;
 }
 
 .testimonial--white {
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 1rem;
+    font-size: .75rem;
     font-weight: 500;
-    padding: 2rem
+    padding: 2rem;
+    box-shadow: 1.5rem 1.5rem 5rem var(--clr-grey400);
 }
 .testimonial--blue {
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: var(--clr-darkblue);
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 500;
-    padding: 2rem
+    padding: 2rem;
+    box-shadow: 1.5rem 1.5rem 5rem var(--clr-grey400);
 }
 
 .testimonial__profile {
     display: flex;
+    align-items: center;
 }
 
 .testimonial__profile-picture {
@@ -118,9 +122,13 @@ body {
 }
 
 .testimonial__bold {
-    font-size: 1.7rem;
+    font-size: clamp(1rem,1.5rem,1.6rem);
     line-height: 2rem;
     margin: 1rem 0rem;
+}
+
+.testimonial__thin{
+  font-size: clamp(0.875rem,1.17vw,1.2rem);
 }
 
 .testimonial__clifford {
@@ -146,6 +154,66 @@ body {
     color: var(--clr-grey100);
     border-radius: 1rem;
 }
+
+
+/*  +++++++++++++++++++++++++++++
+    |       GRID LAYOUT         |
+    +++++++++++++++++++++++++++++*/
+.testimonial__grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 3rem 1.5rem;
+  grid-template-areas: 
+  'clifford'
+  'walters'
+  'harmon'
+  'abrams'
+  'whittle'
+  ;
+}
+
+.testimonial__clifford {
+  grid-area: clifford;
+}
+
+.testimonial__walters {
+  grid-area: walters;
+}
+
+.testimonial__harmon {
+  grid-area: harmon;
+}
+
+.testimonial__abrams {
+  grid-area: abrams;
+}
+
+.testimonial__whittle {
+  grid-area: whittle;
+}
+
+
+@media (min-width: 67.5rem) {
+  .testimonial__grid {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+  'clifford clifford walters whittle'
+  'harmon abrams abrams whittle'
+  ;
+  }
+  
+}
+/* 
+@media (min-width: 48rem) {
+  .testimonial__grid {
+  grid-template-areas: 
+  'clifford clifford'
+  'walters harmon'
+  'abrams whittle'
+  'abrams whittle'
+  ;
+  }
+   */
 
 
 
