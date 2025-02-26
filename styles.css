@@ -128,7 +128,7 @@ body {
 }
 
 .testimonial__thin{
-  font-size: clamp(0.875rem,1.17vw,1.2rem);
+  font-size: clamp(0.875rem,1.1vw,1.2rem);
 }
 
 .testimonial__clifford {
@@ -200,20 +200,28 @@ body {
   'clifford clifford walters whittle'
   'harmon abrams abrams whittle'
   ;
+  max-width: 90%;
+  margin: auto;
   }
-  
+  .testimonial__clifford {
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-size: 8.5rem;
+    background-position: top right 10%;
+    background-repeat: no-repeat;
+  }
 }
-/* 
-@media (min-width: 48rem) {
+
+@media (min-width: 48rem) and (max-width: 67.49rem)  {
   .testimonial__grid {
   grid-template-areas: 
   'clifford clifford'
-  'walters harmon'
+  'abrams walters'
   'abrams whittle'
-  'abrams whittle'
+  'harmon whittle'
   ;
   }
-   */
+}
+  
 
 
 
