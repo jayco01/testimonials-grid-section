@@ -91,7 +91,7 @@ textarea:not([rows]) {
 }
 
 body {
-    background-color: var(--clr-grey200);
+    background-color: var(--clr-grey100);
     align-content: center;
 }
 
@@ -100,7 +100,7 @@ body {
     font-size: .75rem;
     font-weight: 500;
     padding: 2rem;
-    box-shadow: 1.5rem 1.5rem 5rem var(--clr-grey400);
+    box-shadow: 1.5rem 1.5rem 5rem var(--clr-grey200);
 }
 .testimonial--blue {
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -108,7 +108,7 @@ body {
     font-size: 0.75rem;
     font-weight: 500;
     padding: 2rem;
-    box-shadow: 1.5rem 1.5rem 5rem var(--clr-grey400);
+    box-shadow: 1.5rem 1.5rem 5rem var(--clr-grey200);
 }
 
 .testimonial__profile {
@@ -122,13 +122,13 @@ body {
 }
 
 .testimonial__bold {
-    font-size: clamp(1rem,1.5rem,1.6rem);
+    font-size: clamp(1rem,1.1rem,1.2rem);
     line-height: 2rem;
     margin: 1rem 0rem;
 }
 
 .testimonial__thin{
-  font-size: clamp(0.875rem,1.1vw,1.2rem);
+  font-size: clamp(0.7rem,0.75rem,0.9rem);
 }
 
 .testimonial__clifford {
@@ -140,13 +140,13 @@ body {
 .testimonial__walters {
     background-color: var(--clr-grey500);
     color: var(--clr-grey100);
-    border-radius: 1rem;
+    border-radius: 0.7rem;
 }
 
 .testimonial__harmon, .testimonial__whittle {
     background-color: var(--clr-white);
     color: var(--clr-darkblue);
-    border-radius: 1rem;
+    border-radius: 0.7rem;
 }
 
 .testimonial__abrams {
@@ -200,12 +200,12 @@ body {
   'clifford clifford walters whittle'
   'harmon abrams abrams whittle'
   ;
-  max-width: 90%;
+  max-width: 70%;
   margin: auto;
   }
   .testimonial__clifford {
     background-image: url(images/bg-pattern-quotation.svg);
-    background-size: 8.5rem;
+    background-size: 8rem;
     background-position: top right 10%;
     background-repeat: no-repeat;
   }
